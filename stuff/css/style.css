@@ -1,0 +1,7 @@
+body {
+  scroll-behavior: smooth;
+}
+.card img {
+  object-fit: cover;
+  height: 200px;
+}
