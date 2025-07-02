@@ -1,5 +1,17 @@
 body {
-  scroll-behavior: smooth;
+	<style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            scroll-behavior: smooth;
+        }
+        main {
+            flex: 1;
+        }
+    </style>
 }
 .card img {
   object-fit: cover;
