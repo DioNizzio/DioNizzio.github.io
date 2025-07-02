@@ -9,6 +9,7 @@
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">My Portfolio</a>
@@ -22,114 +23,112 @@
     </div>
   </nav>
 
+  <!-- Main Content -->
   <main>
-      <section class="container py-5">
-        <h2 class="text-center mb-4">My Projects</h2>
-        <p>
-            These projects are focused on my gameplay development work. To check my other projects on other areas, check my resume!        
-            <a href="resume.html" class="btn btn-light btn-lg mt-3">View Resume</a>
-        </p>
+    <section class="container py-5">
+      <h2 class="text-center mb-4">My Projects</h2>
+      <p class="text-center mb-4 fs-5">
+        These projects focus on my gameplay development work.
+        For other types of projects, feel free to check my resume below.
+      </p>
+      <div class="text-center mb-5">
+        <a href="resume.html" class="btn btn-outline-dark btn-lg">View Resume</a>
+      </div>
 
-        <!-- First Project -->
-        <div class="row g-4">
-          <!-- Project Card -->
-          <div class="col-md-4">
-            <div class="card h-100">
-              <a href="images/CoverArt.png" class="glightbox" data-gallery="projects">
-                <img src="images/CoverArt.png" class="card-img-top" alt="Game Screenshot">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">River Runners</h5>
-                <p class="card-text">
-                    River Runners is a single player auto-scroller adventure game developed for PC. The player plays against the rapid currents of the river while controlling a log and a merry band of animals, attempting to avoid the various obstacles that appear along the way. 
-                </p>
-                <a href="https://misternizzio.itch.io/riverrunners" class="btn btn-primary" target="_blank">Play Here</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Embedded Video (YouTube) -->
-          <div class="col-md-8">
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/ytBWnAAtfX0" title="Game Trailer" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-
-        <!-- Description Box: Full-width under image + video -->
-        <div class="row mt-3">
-          <div class="col">
-            <div class="bg-light border rounded p-3 shadow-sm">
-              <p class="mb-0">
-                This project was developed in Godot, with GDScript in a span of 4 months for a master's degree course, a project in 2D, with 3 colleagues.
-                <br>
-                In this project I developed:
-                <br><ul>
-                    <li>Gameplay mechanics, like the player movement, and character abilities</li>
-                    <li>UI elements, like the main menus, settings, and in-game elements like the progress bar, health, and characters abilities cooldowns</li>
-                    <li>Animations, for the characters and obstacles</li>
-                </ul>
-                This game was selected for various events like:
-                <ul>
-                <li>Aveiro Jovem Criador 2024 - https://www.cm-aveiro.pt/municipio/comunicacao/noticias/noticia/aveiro-jovem-criador-2024-revelou-vencedores-e-inaugurou-exposicao-no-museu-de-aveiro-santa-joana - participated and the game was exposed in the museum.</li>
-                <li>Novos Talentos FNAC 2024 https://www.fnac.pt/novostalentos - just participated</li>
-                <li>Media Play UA 2024 - https://mediaplay.web.ua.pt/ - finished 3rd place in the public voting.</li>
-                </ul>
+      <!-- Project 1 -->
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <a href="images/CoverArt.png" class="glightbox" data-gallery="projects">
+              <img src="images/CoverArt.png" class="card-img-top" alt="River Runners Screenshot">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">River Runners</h5>
+              <p class="card-text">
+                A 2D auto-scroller adventure game where players navigate a river filled with obstacles while guiding a log and a group of animals downstream.
               </p>
+              <a href="https://misternizzio.itch.io/riverrunners" target="_blank" class="btn btn-primary">Play Here</a>
             </div>
           </div>
         </div>
-
-
-        <!-- Second Project-->
-        <div class="row g-4">
-          <!-- Project Card -->
-          <div class="col-md-4">
-            <div class="card h-100">
-              <a href="images/MainImage.png" class="glightbox" data-gallery="projects">
-                <img src="images/MainImage.png" class="card-img-top" alt="Game Screenshot">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title">Parry&Strike</h5>
-                <p class="card-text">
-                    Parry & Strike is a 2D strategic serious game designed to teach players the fundamental principles and poses of longsword dueling in HEMA, the Historic European Martial Arts. The players will assume the role of duelists, challenging a bot, using skills representing longsword attacks and defensive moves.
-                 <p>
-                <a href="https://misternizzio.itch.io/parrystrike" class="btn btn-primary" target="_blank">Play Here</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Embedded Video (YouTube) -->
-          <div class="col-md-8">
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/L1uajA7EiCY" title="Game Trailer" allowfullscreen></iframe>
-            </div>
+        <div class="col-md-8">
+          <div class="ratio ratio-16x9 shadow-sm">
+            <iframe src="https://www.youtube.com/embed/ytBWnAAtfX0" title="River Runners Trailer" allowfullscreen></iframe>
           </div>
         </div>
+      </div>
 
-        <!-- Description Box: Full-width under image + video -->
-        <div class="row mt-3">
-          <div class="col">
-            <div class="bg-light border rounded p-3 shadow-sm">
-              <p class="mb-0">
-                This project was developed in Unity, with C# in 1 month for a master's degree course, a serious game.
-                <br>
-                I programmed the game but the art comes from free assets on the internet.
+      <div class="row mb-5">
+        <div class="col">
+          <div class="bg-light border rounded p-4 shadow-sm">
+            <p class="mb-2">
+              Developed in Godot (GDScript) over 4 months with a 4-person team during my master's program.
+            </p>
+            <ul>
+              <li>Implemented core gameplay mechanics (movement, abilities).</li>
+              <li>Built UI systems (menus, HUD, cooldown indicators).</li>
+              <li>Created animations for characters and environmental obstacles.</li>
+            </ul>
+            <p class="mb-0">
+              🏆 Featured at:
+              <ul>
+                <li><strong>Aveiro Jovem Criador 2024</strong> — exhibited in the museum.</li>
+                <li><strong>Novos Talentos FNAC 2024</strong> — participated.</li>
+                <li><strong>Media Play UA 2024</strong> — 3rd place (public vote).</li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="row g-4 align-items-center mb-5">
+        <div class="col-md-4">
+          <div class="card h-100 shadow">
+            <a href="images/MainImage.png" class="glightbox" data-gallery="projects">
+              <img src="images/MainImage.png" class="card-img-top" alt="Parry & Strike Screenshot">
+            </a>
+            <div class="card-body">
+              <h5 class="card-title">Parry & Strike</h5>
+              <p class="card-text">
+                A 2D strategy game to teach longsword dueling (HEMA) through skill-based duels. Developed as a serious game project.
               </p>
+              <a href="https://misternizzio.itch.io/parrystrike" target="_blank" class="btn btn-primary">Play Here</a>
             </div>
           </div>
         </div>
-      </section>
+        <div class="col-md-8">
+          <div class="ratio ratio-16x9 shadow-sm">
+            <iframe src="https://www.youtube.com/embed/L1uajA7EiCY" title="Parry & Strike Trailer" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col">
+          <div class="bg-light border rounded p-4 shadow-sm">
+            <p class="mb-0">
+              Developed solo in Unity (C#) within 1 month for a master's course.
+              Focused on gameplay logic using public art assets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <small>© 2025 Daniel Oliveira Moreira</small>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-  <script>const lightbox = GLightbox({ selector: '.glightbox' });</script>
+  <script>GLightbox({ selector: '.glightbox' });</script>
 
+  <!-- Scroll to Top -->
   <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="z-index: 999;">↑</a>
+
 </body>
 </html>
