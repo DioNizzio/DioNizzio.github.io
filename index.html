@@ -79,13 +79,13 @@
       const target = document.querySelector(".typed-text");
       if (!target) return;
       if (i < text.length+1) {
-        if (!isDeleting && j <= text[i].length+1) {
+        if (!isDeleting && j <= text[i].length) {
           currentText = text[i].substring(0, j++);
         } else if (isDeleting && j >= 0) {
           currentText = text[i].substring(0, j--);
         }
         target.innerHTML = currentText;
-        if (!isDeleting && j === text[i].length) {
+        if (!isDeleting && j === text[i].length+1) {
           isDeleting = true;
           setTimeout(type, 1500);
         } else if (isDeleting && j === 0) {
