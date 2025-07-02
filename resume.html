@@ -8,6 +8,7 @@
 </head>
 <body>
 
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">My Portfolio</a>
@@ -21,25 +22,31 @@
     </div>
   </nav>
 
+  <!-- Resume Section -->
   <main>
-      <section class="container py-5 text-center">
-        <h2 class="mb-4">My Resume</h2>
-        <p>Click below to download a copy of my resume.</p>
-        <div class="ratio ratio-4x3">
-          <iframe src="Resume.pdf" title="Resume" frameborder="0"></iframe>
-        </div>
-      </section>
+    <section class="container py-5 text-center">
+      <h2 class="mb-4">My Resume</h2>
+      <p class="mb-4">Click below to download a copy of my resume.</p>
+
+      <div class="mb-4">
+        <a href="Resume.pdf" download class="btn btn-outline-primary btn-lg">Download Resume PDF</a>
+      </div>
+
+      <div class="ratio ratio-4x3 shadow-sm">
+        <iframe src="Resume.pdf" title="Resume PDF Preview" frameborder="0"></iframe>
+      </div>
+    </section>
   </main>
 
   <!-- Back to Top Button -->
   <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="z-index: 999;">↑</a>
 
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <small>© 2025 Daniel Oliveira Moreira</small>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="z-index: 999;">↑</a>
 </body>
 </html>

@@ -6,7 +6,7 @@
   <title>About Me | My Portfolio</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 <body>
 
@@ -26,84 +26,89 @@
 
   <!-- About Section -->
   <main>
-      <section class="container py-5">
-        <div class="row align-items-center">
-          <div class="col-md-4 text-center">
-            <img src="images/portfolio.jpg" alt="Your Photo" class="img-fluid rounded mb-3" width="200" />
-          </div>
-          <div class="col-md-8">
-            <h2>About Me</h2>
-            <p>
-                Hello! I'm a passionate gameplay programmer and software engineer. I work mainly with Unity, but I can also work with Godot and Unreal.
-                <br>
-                I always had a passion for video games since young and loved playing them. So, I got interested on how they were made! 
-                <br>
-                I enjoy blending creativity with technology and love working on innovative projects that push the boundaries of what's possible in gaming.
-            </p>
-            <div class="mt-4">
-                <h5>Contact Me</h5>
-                <div class="d-flex gap-3 justify-content-start align-items-center">
-                    <a href="https://www.linkedin.com/in/daniel-moreira-801764265/" target="_blank" class="text-primary fs-3">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://github.com/DioNizzio" target="_blank" class="text-dark fs-3">
-                        <i class="bi bi-github"></i>
-                    </a>
-                    <a href="mailto:moreiradaniel767@gmail.com" class="text-danger fs-3">
-                        <i class="bi bi-envelope-fill"></i>
-                    </a>
-                </div>
-            </div>
-           </div>
+    <section class="container py-5">
+      <div class="row align-items-center">
+        <div class="col-md-4 text-center mb-4 mb-md-0">
+          <img src="images/portfolio.jpg" alt="Your Photo" class="img-fluid rounded shadow" width="200" />
         </div>
+        <div class="col-md-8">
+          <h2 class="mb-3">About Me</h2>
+          <p>
+            Hello! I'm a passionate gameplay programmer and software engineer. I work mainly with Unity, but I can also work with Godot and Unreal.
+            <br><br>
+            I always had a passion for video games since young and loved playing them. So, I got interested on how they were made!
+            <br><br>
+            I enjoy blending creativity with technology and love working on innovative projects that push the boundaries of what's possible in gaming.
+          </p>
+          <div class="mt-4">
+            <h5>Contact Me</h5>
+            <div class="d-flex gap-4 align-items-center">
+              <a href="https://www.linkedin.com/in/daniel-moreira-801764265/" target="_blank" class="text-primary fs-3">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/DioNizzio" target="_blank" class="text-dark fs-3">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="mailto:moreiradaniel767@gmail.com" class="text-danger fs-3">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <hr class="my-5">
-        <h3>Experience</h3>
-        <ul class="list-unstyled">
-          <li class="mb-3">
-            <h5 class="mb-1">Gameplay Programmer Intern</h5>
-            <p class="mb-0">
-                <img src="images/NerdMonkeysLogo.png" alt="Company Logo" class="img-fluid mb-3" width="50" height="50"/>
-                Nerd Monkeys, February 2025 - June 2025
-            </p>
-            <small>
-                In this internship, I collaborated with a team of workers in various areas, like programmers, artists, and game and sound designers.
-                I worked with Unity and C# to develop various projects where I did game and level designing and programmed gameplay mechanics. In these projects, I was able to improve my familiarity with Unity, my adaptability working with existent projects, by refactoring and adding new features, and my team work by collaborating with other colleagues by attending meetings.
-            </small>
-            <a href="RecommendationLetter.pdf" class="btn btn-outline-primary mb-4" download>Download Nerd Monkeys Recommendation Letter</a>
-          </li>
-        </ul>
 
-        <hr class="my-5">
-            <h3>Education</h3>
-            <ul class="list-unstyled">
-              <li class="mb-3">
-                <h5 class="mb-1">Master's in Digital Games Development </h5>
-                <p class="mb-0">Aveiro University, September 2023 - July 2025</p>
-                <small>
-                    At my master's, I have gained a solid foundation in game development. During my studies, I was introduced to different areas in many courses, like designing, programming, and modeling, where I completed various projects, where I could apply my knowledge as a software engineer and develop my teamwork and logical skills for 2D and 3D games.
-                </small>
-              </li>
-              <li class="mb-3">
-                <h5 class="mb-1">Bachelor's in Computer Science</h5>
-                <p class="mb-0">Fernando Pessoa University, October 2020 – June 2023</p>
-                <small>
-                    At my bachelor's, I was able to learn how to program with various languages, like C, C++, C#, Java, Python, HTML, CSS, and Javascript, that I applied to different projects.
-                </small>
-              </li>
-            </ul>
-      </section>
+      <h3 class="mb-4">Experience</h3>
+      <div class="mb-5">
+        <h5>Gameplay Programmer Intern</h5>
+        <div class="d-flex align-items-center gap-3 mb-2">
+          <img src="images/NerdMonkeysLogo.png" alt="Company Logo" class="img-fluid" width="50" height="50" />
+          <p class="mb-0">Nerd Monkeys, February 2025 - June 2025</p>
+        </div>
+        <p>
+          In this internship, I collaborated with a team of workers in various areas, like programmers, artists, and game and sound designers.
+          I worked with Unity and C# to develop various projects where I did game and level designing and programmed gameplay mechanics.
+        </p>
+        <p>
+          In these projects, I was able to improve my familiarity with Unity, my adaptability working with existent projects (by refactoring and adding new features), and my teamwork by collaborating with other colleagues and attending meetings.
+        </p>
+        <a href="RecommendationLetter.pdf" class="btn btn-outline-primary" download>
+          Download Nerd Monkeys Recommendation Letter
+        </a>
+      </div>
+
+      <hr class="my-5">
+
+      <h3 class="mb-4">Education</h3>
+      <ul class="list-unstyled">
+        <li class="mb-4">
+          <h5 class="mb-1">Master's in Digital Games Development</h5>
+          <p class="mb-0">Aveiro University, September 2023 - July 2025</p>
+          <small>
+            At my master's, I have gained a solid foundation in game development. During my studies, I was introduced to different areas in many courses, like designing, programming, and modeling, where I completed various projects, where I could apply my knowledge as a software engineer and develop my teamwork and logical skills for 2D and 3D games.
+          </small>
+        </li>
+        <li class="mb-4">
+          <h5 class="mb-1">Bachelor's in Computer Science</h5>
+          <p class="mb-0">Fernando Pessoa University, October 2020 – June 2023</p>
+          <small>
+            At my bachelor's, I was able to learn how to program with various languages, like C, C++, C#, Java, Python, HTML, CSS, and Javascript, that I applied to different projects.
+          </small>
+        </li>
+      </ul>
+    </section>
   </main>
 
   <!-- Back to Top Button -->
   <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="z-index: 999;">↑</a>
 
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3">
     <small>© 2025 Daniel Oliveira Moreira</small>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <a href="#" class="btn btn-primary position-fixed bottom-0 end-0 m-4" style="z-index: 999;">↑</a>
 </body>
 </html>
