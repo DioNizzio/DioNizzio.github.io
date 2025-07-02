@@ -85,7 +85,7 @@
           currentText = text[i].substring(0, j--);
         }
         target.innerHTML = currentText;
-        if (!isDeleting && j === text[i].length+1) {
+        if (!isDeleting && j === text[i].length) {
           isDeleting = true;
           setTimeout(type, 1500);
         } else if (isDeleting && j === 0) {
