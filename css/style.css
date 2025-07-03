@@ -44,7 +44,7 @@ main {
 
 /* Hero Section Background */
 .hero-section {
-    background: url('../images/background.png') no-repeat center center;
+    /*background: url('../images/background.png') no-repeat center center;*/
     background-size: cover;
     color: white;
     position: relative;
