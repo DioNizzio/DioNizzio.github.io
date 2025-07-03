@@ -1,48 +1,47 @@
 /* Global Styles */
 html, body {
-    height: 100%;
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+/* Only apply flex layout on home page */
+body.home, body.home html {
+    height: 100%;
+}
+
+body.home {
     display: flex;
     flex-direction: column;
 }
 
-body.home::before {
+body.home main {
+    flex: 1;
+}
+
+/* Background overlay */
+body::before {
     content: '';
     position: fixed;
     top: 0; 
     left: 0;
     width: 100%; 
     height: 100%;
-    background: rgba(0, 0, 30, 0.4); /* Dark overlay for contrast */
+    background: rgba(0, 0, 30, 0.4); /* Adjust darkness */
     z-index: -1;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    scroll-behavior: smooth;
+/* Canvas background for stars */
+#stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Behind the ::before overlay */
+    pointer-events: none;
 }
 
-main {
-    flex: 1;
-}
-
-.cursor {
-    display: inline-block;
-    animation: blink 1s step-end infinite;
-    color: #fff;
-    font-weight: bold;
-}
-
-.content-wrapper {
-    flex: 1;
-}
-
-@keyframes blink {
-    50% { opacity: 0; }
-}
-
-/* Hero Section Styling */
+/* Hero Section Background */
 .hero-section {
     background-size: cover;
     color: white;
@@ -54,17 +53,28 @@ main {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
-/* Star Canvas */
-canvas#stars {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -2;
-    pointer-events: none;
-}
-
 /* Project Cards */
 .card img {
     object-fit: cover;
     height: 200px;
+}
+
+/* Cursor blink animation */
+.cursor {
+    display: inline-block;
+    animation: blink 1s step-end infinite;
+    color: #fff;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+.content-wrapper {
+    flex: 1;
+}
+
+.about-page {
+  background-color: white;
 }
