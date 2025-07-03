@@ -27,8 +27,6 @@
   </style>
 </head>
 <body>
-  <canvas id="stars"></canvas>
-
   <div class="content-wrapper">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -49,13 +47,13 @@
 
       <!-- Hero Section -->
       <main>
-        <section class="text-center container-fluid py-5">
-          <div class="container">
-            <h1 class="display-4 mt-5">Hi, I'm Daniel</h1>
+        <section class="hero-section text-center container-fluid">
+          <div class="container py-5">
+            <h1 class="display-4">Hi, I'm Daniel</h1>
             <h2>
               <span class="typed-text">Game Developer</span><span class="cursor">|</span>
             </h2>
-            <a href="projects.html" class="btn btn-outline-dark btn-lg">View My Projects</a>
+            <a href="projects.html" class="btn btn-outline-dark btn-lg mt-3">View My Projects</a>
           </div>
         </section>
       </main>
@@ -98,50 +96,6 @@
       }
     }
     type();
-
-    // Background stars
-    const canvas = document.getElementById('stars');
-    const ctx = canvas.getContext('2d');
-    let stars = [], numStars = 100;
-
-    function resize() {
-      canvas.width = window.innerWidth;
-      canvas.height = window.innerHeight;
-    }
-    function createStars() {
-      stars = [];
-      for (let i = 0; i < numStars; i++) {
-        stars.push({
-          x: Math.random() * canvas.width,
-          y: Math.random() * canvas.height,
-          radius: Math.random() * 1.5 + 0.5,
-          speed: Math.random() * 0.3 + 0.1
-        });
-      }
-    }
-    function drawStars() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      ctx.fillStyle = '#ffffff';
-      for (let star of stars) {
-        ctx.beginPath();
-        ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
-        ctx.fill();
-        star.y += star.speed;
-        if (star.y > canvas.height) {
-          star.y = 0;
-          star.x = Math.random() * canvas.width;
-        }
-      }
-      requestAnimationFrame(drawStars);
-    }
-
-    window.addEventListener('resize', () => {
-      resize();
-      createStars();
-    });
-    resize();
-    createStars();
-    drawStars();
   </script>
 </body>
 </html>

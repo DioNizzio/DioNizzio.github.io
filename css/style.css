@@ -33,6 +33,18 @@ body {
         }
         @keyframes blink {
             50% { opacity: 0; }
+
+        .hero-section {
+            background: url('images/background.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+        }
     </style>
 }
 .card img {
